@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase DB Test</title>
+</head>
+<body>
+  Probando acceso a base de datos  de Firebase 
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+  <script src="./index.js"></script>
+
+  <div>
+    <div><input type="text" id="nombre" placeholder="Nombre de la receta:"/>  </div>
+    <div><input type="text" id="tiempoPreparacion" placeholder="Tiempo Preparación: "/>  </div>
+      <br />Ingredientes:
+      <input type="text" id="text1"></input>
+      <input type="button" id="button1" value="Agrega Ingrediente" onclick="add_element_to_array()"></input>
+    <div id="Result"></div> 
+    <br>
+    <button onclick="addReceta()">Agrega receta</button>  
+   </div>
+</body>
+</html>
+
+<!--<div>
+    <div><input type="text" id="nameInput" placeholder="Escribe tu nombre"/>  </div>
+    <div><input type="text" id="lastnameInput" placeholder="Escribe tu apellido"/>  </div>
+    <div><input type="number" id="ageInput" placeholder="Selecciona tu edad"/>  </div>
+    <button onclick="addUser()">Agrega usuario</button>
+  </div>-->
